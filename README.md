@@ -5,10 +5,10 @@ Overview
 
 ## Motor-Imagery イメージ・トレーニング
 
-### [Left/Right Hand MI](http://gigadb.org/dataset/100295)
+### 両手の運動におけるイメージ・トレーニング[Left/Right Hand MI](http://gigadb.org/dataset/100295)
 1. 概要
 
-52人の被験者（うち女性19人、平均年齢±SD年齢= 24.8±3.86歳）の左手と右手のMI運動についてBCI実験を実施した。これのデータ・セット。
+　52人の被験者（うち女性19人、平均年齢±SD年齢= 24.8±3.86歳）の左手と右手のMI運動についてBCI実験を実施した。これのデータ・セット。
 
 2. 要件
 - 64のAg / AgClアクティブ電極
@@ -19,7 +19,7 @@ Overview
 
 3. データ形式と構造
 
-各被験者のEEG（1番目から64番目のチャネル）およびEMG（65番目から68番目のチャネル）データ（「* .mat」）のMATLAB構造を以下に示します。
+　各被験者のEEG（1番目から64番目のチャネル）およびEMG（65番目から68番目のチャネル）データ（「* .mat」）のMATLAB構造を以下に示す。
 - 休息：目を開いた状態での休息状態
 - ノイズ：
     - 瞬き、5秒×2
@@ -29,31 +29,18 @@ Overview
     - 頭の動きを左右に、5秒×2
 - imagery_left：左手MIの100または120試行
 - imagery_right：右手のMIの100回または120回の試行
-
 - n_imagery_trials：MIクラスごとに100または120回の試行
-
 - imagery_event：値「1」は各MIトライアルの開始を表します
-
 - movement_left：実際の左手の動きの20回の試行
-
 - Movement_right：実際の右手の動きの20回の試行
-
 - n_movement_trials：実際の手の動きのクラスごとに20回の試行
-
 - movement_event：値「1」は、各運動試行の開始を表します
-
 - frame：ミリ秒単位の試行の時間範囲
-
 - srate：サンプリングレート
-
 - senloc：3Dセンサーの位置
-
 - psenloc：単位球に投影されたセンサー位置
-
 - subject：件名の2桁のID-「s＃」
-
 - comment：件名に対するコメント
-
 - bad_trial_indices
     - 電圧の大きさによって決まる悪い試行
     - EMGの活動と相関する悪い試験
